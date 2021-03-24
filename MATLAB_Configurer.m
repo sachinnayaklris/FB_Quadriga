@@ -1,7 +1,9 @@
 % MATLAB Configurer
 % Create a config file for running the MRO data generation
+% See this quip for parameter selection https://quip.com/kfyrAv0ZhdEK/FBQuadriga-User-Guide
 output_file_path = '';
 config = {};
+% addpath(genpath([pwd, '/MVRCfuncs']));
 
 config.simulation.run_i = 'hex_tx7_rx20164_3gpp3duma_seed0';
 
@@ -18,7 +20,7 @@ config.simulation.batch_tilts = [5];
 config.simulation.type = 'MRO'; % choose from 'MRO', 'CCO', or any other. Will run MRO mode for any other value
 % MRO specific options
 config.simulation.bandwidth_Mhz = 10;
-config.simulation.ue_seed = 0; %TODO ADD
+config.simulation.ue_seed = 0;
 config.simulation.simulation_duration_s = 10;
 config.simulation.random_UEs = 2;  % number of random UEs to lay, set to 0 to use specific defined UEs
 config.simulation.P_local = 0.8; % Probability for locally distributed random UEs
