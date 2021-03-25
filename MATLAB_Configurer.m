@@ -19,7 +19,7 @@ config.simulation.BS_drop = 'hex'; % Choose 'hex', 'rnd', 'csv' for built in lay
 config.simulation.batch_tilts = [5];
 config.simulation.type = 'MRO'; % choose from 'MRO', 'CCO', or any other. Will run MRO mode for any other value
 % MRO specific options
-config.simulation.bandwidth_Mhz = 10;
+config.simulation.bandwidth_Mhz = 5;
 config.simulation.ue_seed = 0;
 config.simulation.simulation_duration_s = 10;
 config.simulation.random_UEs = 2;  % number of random UEs to lay, set to 0 to use specific defined UEs
